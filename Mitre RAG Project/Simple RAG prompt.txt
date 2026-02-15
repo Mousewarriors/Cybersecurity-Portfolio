@@ -1,0 +1,25 @@
+Identify the technique(s) using ONLY the provided context and the alert evidence.
+
+You are performing MITRE ATT&CK technique classification.
+
+You are ONLY allowed to use the techniques evidenced in the Alert.
+Do NOT use outside knowledge.
+
+If no technique fits the evidence, respond with:
+NONE
+
+For each technique selected:
+- Output the Technique ID and Name exactly as shown
+- Quote the specific alert evidence that supports it
+- Assign a confidence score (0–100)
+- Output Technique ID in MITRE format (e.g., T1059.001) and Technique Name exactly (e.g., PowerShell).
+Do not output filenames or underscores.
+
+
+Do NOT invent techniques.
+Do NOT guess.
+If evidence is insufficient, return NONE.
+
+<context>
+{{CONTEXT}}
+</context>
